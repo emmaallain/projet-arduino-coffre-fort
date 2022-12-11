@@ -1,2 +1,10 @@
-zfrfrg
-fregrggg
+CAHIER DES CHARGES
+
+Notre projet consiste à faire des casiers collectifs numérisées. 
+L’utilisateur va pouvoir réserver un casier en choisissant son mot de passe. 
+L’heure d’utilisation aura un prix et le mode de paiement sera uniquement en espèce.
+Afin de faciliter la réservation, les casiers auront une led rouge ou verte afin de savoir s’il est disponible ou non. 
+De plus pour favoriser la sécurité des affaires, une tentative échouée pour ouvrir un casier enverra un message directement au client afin de le prévenir qu’on essaye de lui voler ses affaires.
+Il aura au préalable installé l’application reliée au casier. 
+Les casiers seront initialement fermés et s’ouvriront seulement au moment de l’enregistrement. Ils se refermeront manuellement et se verrouilleront automatiquement.
+
