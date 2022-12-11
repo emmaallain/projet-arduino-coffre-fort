@@ -1,9 +1,22 @@
+Séance1 : 
+        Emma: connexion digicode LCD
+        Matéo: maquette du projet+ planifier taille du projet, où se trouveront les composants
+       Ensemble :  réfléchir aux systèmes pour fermer et ouvrir les portes, au système pour payer
+Séance2 :
+        Emma: connexion Bluetooth sur android et programme
+        Matéo: programme pour enregistrer mot de passe
+Séance3 : 
+        Emma: relier le fonctionnement LCD digicode
+        Matéo: programme identifiant
+Séance4 :
+        Emma: programme pour payer plus montage
+        Matéo: tout relier
+Séance5 :
+        Emma: programme ouverture des portes (voir le fonctionnement avec le moyen choisi) + lier au code 
+        Matéo: programme ouverture des portes (voir le fonctionnement avec le moyen choisi) + lier au code 
 
-Séance 1 : maquette du projet+ planifier taille du projet, où se trouveront les composants, réfléchir aux systèmes pour fermer et ouvrir les portes,
-au système pour payer + établir liste des composants qu’on aura besoin +connexion digicode LCD 
-Séance 2 : programme pour enregistrer mot de passe + connexion Bluetooth sur android et programme
-Séance 3 : relier le fonctionnement LCD digicode + programme identifiant
-Séance 4 : programme pour payer plus montage + tout relier 
-Séance 5 : programme ouverture des portes (voir le fonctionnement avec le moyen choisi) + lier au code 
-Séance 6 : ajouter led + tout relier et tout débuguer +faire ce qui n’a pas été fait 
-Séance 7 : tout revérifier
+Séance6 :
+        Emma: tout relier et tout débuguer
+        Matéo: ajouter led
+       Ensemble : faire ce qui n’a pas été fait 
+Séance7 : tout revérifier
