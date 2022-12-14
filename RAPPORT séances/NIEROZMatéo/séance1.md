@@ -1,1 +1,8 @@
+EN COMMUN. Notre travail durant cette séance c’est porté sur le fonctionnement de l’écran et du key-pad de notre coffre-fort. Mais aussi sur la conception du coffre, allons-nous faire une porte a aimant ? Une Système de monnaie ? Pour la porte, nous allons plutôt utiliser un servomoteur car on peut l’utiliser en 5V, pas comme l’aimant (12V). Et pour le système de paiement, nous utiliserons des jetons grâce aux capteurs lasers et non des pièces car c’est assez complexe.
+ 
+Lors de cette séance, je me suis penché sur le fonctionnement de L’écran LCD 16,2. J’ai donc fait quelques recherches et regarder quelques vidéos pour comprendre son fonctionnement. Par la suite je me suis penché sur un tout premier programme (voir « morceaux de codes ») de mis en œuvre qui me permettait d’afficher sur le lcd ce que j’avais demandé et j’ai donc aussi ajouter les différentes bibliothèques dont j’avais besoin. En ce qui concerne le montage, pour éviter une montagne de fils, j’ai utilisé un pin I2C, très pratique et peu encombrant. Une fois le système compris, j’ai pu le relier avec le programme d’Emma pour faire fonctionner le key pad avec le LCD.  
+Pour l’exécution de mon programme, j’ai dû installer la bibliothèque <LiquidCrystal_I2C.h>. Le « setCursor(3, 0) » est très important . Il permet de choisir ou notre mot peux commencer sur l’écran. Par exemple ici, j’ai écrit Hello, il commence a partir de la 3èeme case de la première ligne. Voici quelques images :
+
+![image](https://user-images.githubusercontent.com/119796961/207733640-92698be8-b010-469f-bbe1-a6a2586685b1.png)
+![image](https://user-images.githubusercontent.com/119796961/207733687-0c74fc47-3e8e-4efb-9018-428acc5a4f4d.png)
 
