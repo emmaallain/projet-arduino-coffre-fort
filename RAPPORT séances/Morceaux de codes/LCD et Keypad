@@ -1,0 +1,48 @@
+#include <LiquidCrystal_I2C.h>
+#include <Keypad.h>
+LiquidCrystal_I2C LCD1(0x27, 16, 2);
+
+const int nbLigne = 4; 
+const int nbColonnes = 4;
+char keys[nbLigne][nbColonnes] = {
+{'1','2','3', 'A'},
+{'4','5','6', 'B'},
+{'7','8','9', 'C'},
+{'*','0','#', 'D'}
+};
+ 
+byte pin_rows[nbLigne] = {9, 8, 7, 6}; 
+byte pin_column[nbColonnes] = {5, 4, 3, 2};
+Keypad keypad = Keypad( makeKeymap(keys), pin_rows, pin_column, nbLigne, nbColonnes );
+
+String password="1234";
+String passwordSaisi="";
+
+void setup() {
+  LCD1.init(); 
+  LCD1.backlight();
+  LCD1.setCursor(1,0);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  char key = keypad.getKey();
+  if(key){
+    LCD1.print(key);  
+    delay(100);
+    String keyBis=String(key);
+    passwordSaisi+=keyBis;
+    
+    if (passwordSaisi==password){
+      LCD1.clear();
+      LCD1.print("password okay");
+      delay(1000);
+      LCD1.clear();
+      LCD1.print("Door open"); 
+    }  
+  }
+  if (key=='C'){
+    LCD1.clear();
+  }
+}
