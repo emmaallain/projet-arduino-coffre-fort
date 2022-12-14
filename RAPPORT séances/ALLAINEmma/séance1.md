@@ -9,4 +9,10 @@ On a également commencé a rajouté une propriété sur la touche « c » qui v
 
 ![image](https://user-images.githubusercontent.com/119605830/207627820-3fd78aa0-6bda-47bd-aead-5aea52b29e62.png)
 
+![image](https://user-images.githubusercontent.com/119605830/207630702-6acc5933-8461-4c76-9f67-26d144a5b08e.png)
+
+![image](https://user-images.githubusercontent.com/119605830/207631184-81eb49f2-3e0c-4930-baae-ec695f486214.png)
+
+Sources: https://arduino-france.site/lcd-1602/#5
+https://forum.arduino.cc/t/conversion-char-en-string/301946
 
