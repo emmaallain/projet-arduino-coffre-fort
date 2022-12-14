@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   LCD1.setCursor(3, 0);
-  LCD1.print("Enter your ");
+  LCD1.print("Enter your "); // positionne la première lettre sur la 4ème case de la premiere ligne du LCD
   LCD1.setCursor(4, 1);
   LCD1.print("password ");
   delay(700);
