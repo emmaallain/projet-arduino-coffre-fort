@@ -1,0 +1,100 @@
+#include <LiquidCrystal_I2C.h>
+#include <Keypad.h>
+#include <Servo.h>
+LiquidCrystal_I2C LCD1(0x27, 16, 2);
+
+const int nbLigne = 4; 
+const int nbColonnes = 4;
+char keys[nbLigne][nbColonnes] = {
+{'1','2','3', 'A'},
+{'4','5','6', 'B'},
+{'7','8','9', 'C'},
+{'*','0','#', 'D'}
+};
+ 
+byte pin_rows[nbLigne] = {9, 8, 7, 6}; 
+byte pin_column[nbColonnes] = {5, 4, 3, 2};
+Keypad keypad = Keypad( makeKeymap(keys), pin_rows, pin_column, nbLigne, nbColonnes );
+Servo servo;
+
+String password="";
+String passwordSaisi="";
+String passwordFinal="";
+
+
+void setup() {
+  LCD1.init(); 
+  LCD1.backlight();
+  LCD1.setCursor(1,0);
+  servo.attach(13);
+  servo.write(0);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  while (password.length()<4){
+    LCD1.setCursor(0,0);
+    LCD1.print("veuillez choisir ");
+    LCD1.setCursor(2,1);
+    LCD1.print("mot de passe");
+    Serial.print(password.length());
+    char mdp=keypad.getKey();
+    String mdpBis=String(mdp);
+    password+=mdpBis;
+  }
+  char key=keypad.getKey();
+
+  
+  if(key and key!='A'){
+    LCD1.setCursor(1,0);
+    LCD1.print("mettre mdp");
+    LCD1.setCursor(passwordSaisi.length(),1);
+
+    LCD1.print(key);  
+    delay(100);
+    String keyBis=String(key);
+    passwordSaisi+=keyBis;
+  }
+
+  while (key=='A'){
+      Serial.print(passwordSaisi);
+      LCD1.clear();
+      if (passwordSaisi==password){
+        LCD1.clear();
+        LCD1.print("password okay");
+        delay(1000);
+        LCD1.clear();
+        servo.write(90);
+        LCD1.print("Door open");
+        key=""; 
+      }
+      else{
+        LCD1.print("password not okay");
+        passwordSaisi=""; 
+        delay(3000);
+        LCD1.clear();
+        LCD1.print("retry");
+        delay(3000); 
+        LCD1.clear();
+        key="";
+      }
+    }
+    if (key=='C'){
+      LCD1.clear();
+      passwordSaisi="";
+    }
+    if (key=='#'){
+      servo.write(0);
+      LCD1.clear();
+      LCD1.setCursor(1,1);
+      LCD1.print("door closed");
+      passwordSaisi="";
+      passwordFinal="";
+    }
+    if (key=='*' or key=='B' or key=='D'){
+      key="";
+    }
+
+ 
+}
