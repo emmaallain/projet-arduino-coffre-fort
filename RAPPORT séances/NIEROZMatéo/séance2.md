@@ -25,6 +25,7 @@ La principale difficuté était que le moteur ne s'arretait pas de tourner puis 
 
 et a la fin du TD, on a reussi à obtenir ceci: https://youtube.com/shorts/78rOJIli7kU?feature=share
 
+Sur la video, j'appuie sur * pour verouiller et # pour refermer mais on utilisera le bouton A pour ceci.
 Comme l'a dit Emma, au prochain TD, on s'occupera de la position initiale du moteur à l'interieur du coffre, on continuera notre code biensur pour finir la partie Mot de passe et ouverture/fermeture du coffre. Puis on commencera la partie bluetooth ou alors le moyen de paiment.
 
 
