@@ -10,7 +10,7 @@ et le code dans "Morceaux de codes".
 
 Dans le code pour le servomoteur, j'ai du installer une bibliothèque <Servo.h>, puis j'ai appris ce qu'était le "attach" en arduino, cela veut dire tout simplement que ça attache un objet de type Servo à une broche spécifique 9 ou 10! Puis on utilise une boucle for pour faire foncnctionner le servomoteur:
 
--for (positionDuServo = 0; positionDuServo <=180; positionDuServo++) pour faire une demie rotation dans le sens antihoraire.
+- for (positionDuServo = 0; positionDuServo <=180; positionDuServo++) pour faire une demie rotation dans le sens antihoraire.
 - for(positionDuServo = 180; positionDuServo >= 0; positionDuServo--) pour faire une demie rotation dans le sens horaire.
 
 Le resultat et que l'hélice tourne en continue, sur la photo, c'est un moteur à rotation continue qu'on à changé juste après par un servomoteur. Nous avons donc les rotations et il fallait ensuite comprendre comment l'utiliser pour notre coffre puis il a fallu connecter avec le code d'Emma pour pouvoir déclencher 1/4 de rotation si le mot de passe est valide et ainsi dévérouiller la porte.
