@@ -6,7 +6,7 @@ On obtient:
 
 ![image](https://user-images.githubusercontent.com/119796961/210824330-351aa59c-93e2-4842-b7fe-4b9ff34da277.png)
 
-+ le code dans "Morceaux de codes".
+et le code dans "Morceaux de codes".
 
 Dans le code pour le servomoteur, j'ai du installer une bibliothèque <Servo.h>, puis j'ai appris ce qu'était le "attach" en arduino, cela veut dire tout simplement que ça attache un objet de type Servo à une broche spécifique 9 ou 10! Puis on utilise une boucle for pour faire foncnctionner le servomoteur:
 
