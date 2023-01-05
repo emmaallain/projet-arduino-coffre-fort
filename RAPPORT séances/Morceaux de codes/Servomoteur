@@ -5,7 +5,7 @@ int positionDuServo = 0; //Variable contenant la position souhaitée du servo
 
 void setup() {
   
-  monServo.attach(10); // Servo connecté sur la broche DIGITAL 10
+  monServo.attach(10); // // attache la variable Servo à la broche 10
   monServo.write(positionDuServo); // Servo commandé dans sa position initiale
   pinMode(10,OUTPUT); 
 
